@@ -91,9 +91,7 @@ VULNERABILITIES DEMONSTRATED
 - Plain-text success response
 - Use of HTTP (instead of HTTPS) exposes credentials in transit
 
-======================================================================
-CREDITS
-======================================================================
 
+CREDITS
 Written as part of a client-server TOTP vulnerability demonstration.
 
