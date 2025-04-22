@@ -33,7 +33,8 @@ Install using pip:
     pip install requests
 
 
-**USAGE**
+USAGE:
+-------------
 
 
 1. Make sure the TOTP server is running and accessible.
@@ -50,7 +51,8 @@ Install using pip:
     python totp_client.py
 
 
-**HOW IT WORKS**
+HOW IT WORKS:
+-------------
 
 
 - The script repeatedly:
@@ -60,7 +62,8 @@ Install using pip:
 - It continues indefinitely until interrupted by the user (Ctrl+C)
 
 
-**CONFIGURATION**
+CONFIGURATION:
+-------------
 
 
 Inside the script, you can configure:
@@ -70,7 +73,8 @@ Inside the script, you can configure:
 - `time.sleep(5)` – Adjust the polling interval (currently 5 seconds)
 
 
-**EXAMPLE OUTPUT**
+EXAMPLE OUTPUT:
+-------------
 
 
 [Client] Received TOTP: 539102
@@ -79,7 +83,8 @@ Inside the script, you can configure:
 ...
 
 
-**NOTES**
+NOTES:
+-------------
 
 
 - The server is expected to return a valid TOTP code as a plain text response.
@@ -87,7 +92,8 @@ Inside the script, you can configure:
 - Useful for testing or demonstrating code synchronization with a TOTP server.
 
 
-**RELATED FILES**
+RELATED FILES:
+-------------
 
 
 - `server.py`          – The server that responds with TOTP codes
