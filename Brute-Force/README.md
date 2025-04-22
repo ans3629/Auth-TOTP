@@ -3,16 +3,16 @@ TOTP BRUTE-FORCING SCRIPT - README
 
 This script performs a brute-force attack against a vulnerable TOTP login endpoint exposed over HTTP. It attempts all 4-digit TOTP codes (0000–9999) for a specified user until it receives a successful login response.
 
-======================================================================
+
 DISCLAIMER
-======================================================================
+
 This script is for educational purposes only.
 Do NOT run this against any system you do not own or have explicit
 permission to test.
 
-======================================================================
+
 SCRIPT: brute_force_http.py
-======================================================================
+
 
 DESCRIPTION:
 ------------
@@ -32,9 +32,9 @@ Install using pip:
 
     pip install requests tqdm
 
-======================================================================
+
 USAGE
-======================================================================
+
 
 1. Make sure the vulnerable TOTP server is running and accessible.
 
@@ -47,9 +47,9 @@ USAGE
 
    (Rename the file if needed to match your script name.)
 
-======================================================================
+
 CONFIGURATION
-======================================================================
+
 
 Inside the script, you can modify:
 
@@ -63,9 +63,9 @@ Example snippet:
     user = 'alice'
     login_url = f"{server_ip}/login"
 
-======================================================================
+
 HOW IT WORKS
-======================================================================
+
 
 - Generates 4-digit codes from 0000 to 9999
 - Sends each code in an HTTP GET request to the login endpoint
@@ -73,18 +73,18 @@ HOW IT WORKS
 - Monitors server responses
 - On receiving "Login successful", prints the correct code and exits
 
-======================================================================
+
 OUTPUT EXAMPLE
-======================================================================
+
 
 Brute-forcing TOTP code:  43%|████████████████▍                  | 4321/10000 [00:06<00:08, 676.47it/s]
 
 [+] SUCCESS! Code: 4321
 Server Response: Login successful
 
-======================================================================
+
 VULNERABILITIES DEMONSTRATED
-======================================================================
+
 
 - No rate-limiting or lockout mechanisms on failed login attempts
 - Predictable 4-digit code space
