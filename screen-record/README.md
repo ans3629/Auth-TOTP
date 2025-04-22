@@ -6,6 +6,8 @@ This repository contains a demonstration environment for testing screen capture 
 
 This code is for **EDUCATIONAL PURPOSES ONLY**. The malware demonstration tools included in this repository should ONLY be used in isolated test environments. Unauthorized use against systems or individuals is illegal and unethical.
 
+https://github.com/user-attachments/assets/4650ad2a-feec-4b45-9008-5097396e1bc0
+
 ## Environment Setup
 
 ### Required Components
